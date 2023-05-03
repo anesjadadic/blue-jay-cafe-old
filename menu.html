@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blue Jay Cafe</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Visit my site.">
+    <link rel="stylesheet" href="cafeStyleSheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+        }
+        h3 {
+            margin: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: rgb(178, 191, 223);
+            border: 3px solid rgb(9, 36, 94);
+            font-size: 150%;
+        }
+        th {
+            font-size: 120%;
+            height: 50px;
+            border: 3px solid rgb(9, 36, 94);
+            background-color: rgb(9, 36, 94);
+            color: #e0f1ff;
+        }
+        td {
+            color: rgb(9, 36, 94);
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(209, 223, 255);
+        }
+        td:nth-child(even) {
+            background-color: rgb(190, 202, 231);
+        }
+        tr:nth-child(odd) td:nth-child(even) {
+            background-color: rgb(164, 176, 204);
+        }
+        td, th {
+            text-align: center;
+            padding: 8px 0px 8px 0px;
+        }
+        #container {
+            padding: 75px 75px 0px 75px;
+        }
+        #menu {
+            float: left;
+            width: 80%;
+        }
+        #menuPics {
+            float: left;
+            width: 20%;
+        }
+        #menuPic {
+            height: 220px;
+            margin: 10px 0px 10px 0px;
+            border: 3px solid rgb(9, 36, 94);
+        }
+        #printButton {
+            clear: both;
+        }
+        .menuPrint {
+            color: rgb(9, 36, 94);
+            border: 3px solid rgb(9, 36, 94);
+            background-color: #edf6ff;
+            font-size: 120%;
+            font-weight: 600;
+            height: 50px;
+            width: 150px;
+        }
+        @media print {
+            * {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function printDiv() {
+            window.frames["printMenu"].document.body.innerHTML = document.getElementById("menu").innerHTML;
+            window.frames["printMenu"].window.focus();
+            window.frames["printMenu"].window.print();
+       }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="headerDiv">
+                <a href="home.html"><img id="headImg" src="logo.png"></a>
+                <h1>BLUE JAY CAFE</h1>
+            </div>
+        </header>
+    <nav>
+        <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="locations.html">LOCATIONS</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="container">
+            <div id="menu">
+                <table>
+                    <tr>
+                        <th colspan="4">Beverages</th>
+                    </tr>
+                    <tr>
+                        <td>Hot Coffee</td>
+                        <td>S - $3.49<br>M - $3.99<br>L - $4.49</td>
+                        <td>Iced Coffee</td>
+                        <td>S - $3.49<br>M - $3.99<br>L - $4.49</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>S - $3.99<br>M - $4.49<br>L - $4.99</td>
+                        <td>Cappucino</td>
+                        <td>S - $3.99<br>M - $4.49<br>L - $4.99</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>S - $3.99<br>M - $4.49<br>L - $4.99</td>
+                        <td>Iced Latte</td>
+                        <td>S - $4.49<br>M - $5.99<br>L - $6.49</td>
+                    </tr>
+                    <tr>
+                        <td>Machiatto</td>
+                        <td>S - $3.99<br>M - $4.49<br>L - $4.99</td>
+                        <td>Iced Machiatto</td>
+                        <td>S - $4.49<br>M - $5.99<br>L - $6.49</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Chocolate</td>
+                        <td>S - $3.49<br>M - $3.99<br>L - $4.49</td>
+                        <td>Hot Tea</td>
+                        <td>S - $3.49<br>M - $3.99<br>L - $4.49</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Baked Goods</th>
+                    </tr>
+                    <tr>
+                        <td>Blueberry Muffin</td>
+                        <td>$3.99</td>
+                        <td>Chocolate Chip Muffin</td>
+                        <td>$3.99</td>
+                    </tr>
+                        <td>Pumpkin Muffin</td>
+                        <td>$3.99</td>
+                        <td>Croissant</td>
+                        <td>$3.49</td>
+                    </tr>
+                    <tr>
+                        <td>Cream Cheese Bagel</td>
+                        <td>$4.99</td>
+                        <td>Coffee Cake</td>
+                        <td>$4.49</td>
+                    </tr>
+                    <tr>
+                        <td>Cheesecake</td>
+                        <td>$5.49</td>
+                        <td>Sea Salt Brownie</td>
+                        <td>$4.99</td>
+                    </tr>
+                    <tr>
+                        <td>Breakfast Sandwich</td>
+                        <td>$5.49</td>
+                        <td>Cinnamon Roll</td>
+                        <td>$4.49</td>
+                    </tr>
+                    <tr>
+                        <td>Banana Bread</td>
+                        <td>$4.99</td>
+                        <td>Biscotti Pack</td>
+                        <td>$2.99</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="menuPics">
+                <img id="menuPic" src="menuPics/coldBrew.jpg" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <img id="menuPic" src="menuPics/cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappucino</h3>
+                <img id="menuPic" src="menuPics/pumpkinMuffin.jpg" alt="Pumpkin Muffin">
+                <h3>Pumpkin Muffin</h3>
+            </div>
+            <div id="printButton">
+                <br><br>
+                <button class="menuPrint" onclick="printDiv()">Print Menu</button>
+                <iframe name="printMenu" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <footer>
+        Copyright &copy; 2023 Blue Jay Cafe<br>
+        <div id="address">
+        52 Avian St, Fake City, NY 42069<br>
+        <a id="mobile" href="tel:347-841-3750">Call Us</a> 
+        <a href="mailto:anesjadadic1@gmail.com">Email Us</a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blue Jay Cafe</title>
+<meta charset="utf-8">
+<meta name="description" content="Visit my site.">
+<link rel="stylesheet" href="cafeStyleSheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        text-align: center;
+    }
+    #container {
+        padding: 45px 0px 0px 0px;
+    }
+    h3 {
+        margin: 30px 10px 10px 10px;
+    }
+    h4 {
+        margin-top: 0px;
+        font-size: 125%;
+    }
+    .locationImg {
+        border: solid 3px rgb(9, 36, 94);
+        box-shadow: 8px 8px rgb(9, 36, 94);
+        height: 420px;
+        width: 600px;
+    }
+    .location {
+        display: inline-block;
+        text-align: center;
+        width: 600px;
+        position: relative;
+        margin: 30px 35px 0px 35px;
+    }
+    .item > .locationImg {
+        float: left;
+        width: 600px;
+        display: block;
+        border: solid 3px rgb(9, 30, 71);
+        box-shadow: 8px 8px rgb(9, 30, 71);
+        margin: 0px 50px 25px 50px;
+    }
+    .caption {
+        display: block;
+    }
+    .overlay {
+        /* Background */
+        position: absolute; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        top: 3px;
+        left: 3px;
+        width: 100%;
+        height: 80px;          /* Must subtract by the total padding to fit */
+        transition: .5s ease;
+        opacity:0;
+        /* Font */
+        font-style: italic;
+        color: white;
+        font-size: 32px;
+        padding: 170px 0px 170px 0px;
+        text-align: center;
+    }
+    .location:hover .overlay {
+        opacity: 1;
+    }
+
+</style>
+<script></script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div id="headerDiv">
+            <a href="home.html"><img id="headImg" src="logo.png"></a>
+            <h1>BLUE JAY CAFE</h1>
+        </div>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="locations.html">LOCATIONS</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    </nav>
+    <main>
+    <div id="container">
+        <div class="location">
+            <img class="locationImg" src="locations/location1.jpg">
+            <div class="overlay">
+                Come visit our newest location <br>
+                in the heart of NYC.
+            </div>
+            <span class="caption">
+                <h3>Manhattan</h3>
+                <h4>138 East 24th St, New York, NY 10014</h4>
+            </span>
+        </div>
+        <div class="location">
+            <img class="locationImg" src="locations/location2.jpg">
+            <div class="overlay">
+                See what the greatest cafe <br>
+                in Queens has to offer.
+                
+            </div>
+            <span class="caption">
+                <h3>Queens</h3>
+                <h4>36-12 Broadway, Queens, NY 11106</h4>
+            </span>
+        </div>
+        <div class="location">
+            <img class="locationImg" src="locations/location3.jpg">
+            <div class="overlay">
+                Our first location, still <br>
+                as good as the day it opened.
+            </div>
+            <span class="caption">
+                <h3>New Rochelle</h3>
+                <h4>62 Clinton Pl, New Rochelle, NY 10801</h4>
+            </span>
+        </div>
+    </div>
+    </main>
+    <br><br>
+    <footer>
+    Copyright &copy; 2023 Blue Jay Cafe<br>
+    <div id="address">
+        52 Avian St, Fake City, NY 42069<br>
+        <a id="mobile" href="tel:347-841-3750">Call Us</a> 
+        <a href="mailto:anesjadadic1@gmail.com">Email Us</a>
+    </div>
+    </footer>
+</div>
+</body>
+</html>

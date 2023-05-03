@@ -1,0 +1,162 @@
+
+body { 
+    background: rgb(24,59,93);
+    background: linear-gradient(0deg, rgb(26, 41, 73) 0%, rgb(96, 130, 204) 100%);
+    height: 100%;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+
+#headImg {
+    float: left;
+    height: 200px;
+    margin: 0px 210px 0px 210px;
+}
+
+#headerDiv {
+    background: rgb(66,110,204,1);
+    background: linear-gradient(0deg, rgb(17, 43, 99) 0%, rgb(53, 91, 173) 100%);
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 3px 3px rgb(0, 25, 71);
+    font-weight: bold;
+    font-size: 400%;
+    line-height: 200px;
+    text-align: left;
+    margin: 0;
+}
+
+h2 {  
+    color: rgb(9, 36, 94);
+    background-color: rgb(174, 187, 218);
+    padding: 10px;
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-size: 180%;
+    color: rgb(9, 36, 94);
+}
+
+nav ul {
+    border-top: solid #10181f 3px;
+    border-bottom: solid #10181f 3px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("beanBackground.png");
+}
+
+nav ul a {
+    display: block;
+    line-height: 70px;
+    padding: 0 25px;
+    font-size: 140%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 9, 26);
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a:hover {
+    font-size: 170%;
+    text-shadow: none;
+    background-color: rgb(179, 202, 235);
+    color: rgb(19, 31, 56);
+}
+
+footer { 
+    background-color: rgb(141, 152, 179);
+    border-top: solid 3px #10181f;
+    padding: 10px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+}
+
+#wrapper {
+    border: solid #10181f 3px;
+    margin: 65px 65px 65px 65px;
+    background-color: rgb(193, 208, 242);
+}
+
+#promo {
+    margin: auto;
+    width: 70%;
+}
+
+#promoText {
+    float: left;
+    width: 50%;
+    margin-right: 50px;
+}
+
+#promoText1 {
+    color:rgb(41, 81, 168);
+    font-size: 300%;
+    text-align: right;
+}
+
+#promoText2 {
+    color:rgb(16, 55, 139);
+    font-size: 300%;
+    text-align: right;
+}
+
+#promoImg {
+    background-color: rgb(226, 235, 255);
+    display: block;
+    border: solid 3px rgb(16, 55, 139);
+    box-shadow: 8px 8px rgb(16, 55, 139);
+}
+
+select {
+    color: rgb(9, 36, 94);
+    background-color: #edf6ff;
+    height: 45px;
+    width: 175px;
+    font-size: 110%;
+    border: rgb(9, 36, 94) solid 2px;
+    text-align: center;
+}
+
+input, button {
+    height: 30px;
+    font-size: 105%;
+    border: rgb(9, 36, 94) solid 2px;
+}
+
+input[type="radio"] {
+    height: 20px;
+    transform: scale(1.8);
+}
+
+input[type="submit"], input[type="reset"], button {
+    color: rgb(9, 36, 94);
+    background-color: #edf6ff;
+    font-size: 110%;
+    height: 42px;
+    width: 85px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background-color: #839eb4;
+    color: #edf6ff;
+}
+
+input[type="submit"]:active, input[type="reset"]:active, button:active {
+    background-color: #0074d3;
+    color: #edf6ff;
+}
